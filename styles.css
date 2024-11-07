@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Jost", sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+  }
+  
+  /* main color */
+  :root {
+    --primary-color: #6222cc;
+  }
+  
+  /* hero section */
+  .hero {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .cta-button {
+    background-color: #fba504;
+    color: black;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+    border-radius: 50px;
+  }
+  
+  .cta-button:hover {
+    background-color: #f3e6ff;
+  }
+  
+  /* section titles */
+  section h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin: 1.5rem 0;
+    font-size: 2rem;
+  }
+  
+  /* Why Choose Shiplee Section */
+  .why-choose {
+    padding: 2rem;
+  }
+  
+  /* Franchise Benefits Table Section */
+  .benefits {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .benefits table {
+    width: 100%;
+    margin-top: 1rem;
+    border-collapse: collapse;
+  }
+  
+  .benefits th,
+  .benefits td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+  }
+  
+  .benefits th {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Network Reach Section */
+  .network {
+    background-color: #f0f0f8;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  /* Partner Logos Section */
+  .partners {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .logo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .logo-grid img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+  }
+  
+  .logo-grid img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Scroll-to-Top Button */
+  .scroll-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 1rem;
+    cursor: pointer;
+    display: none;
+  }
+  
+  /* accordian style */
+  .why-choose-shiplee {
+    background-color: #f5f5f5; /* Light background for the section */
+    padding: 20px 20px;
+    text-align: center;
+  }
+  
+  .why-choose-shiplee h2 {
+    font-family: "Jost", sans-serif;
+    font-size: 2rem;
+    color: #6222cc;
+    margin-bottom: 30px;
+  }
+  
+  .accordion-item {
+    margin-bottom: 20px;
+  }
+  .accordion-item :hover {
+    background-color: #6222cc;
+  }
+  
+  .accordion-title {
+    background-color: #fff;
+    color: #333;
+    font-size: 1.2rem;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .accordion-title i {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .accordion-content {
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-top: none;
+    display: none;
+  }
+  
+  .accordion-content p {
+    margin: 0;
+  }
+  
+  .accordion-title.active + .accordion-content {
+    display: block;
+  }
+  /* General Section Styling */
+  .franchise-benefits {
+    background-color: #f9f9f9;
+    padding: 15px 20px;
+    text-align: center;
+  }
+  
+  .franchise-benefits h2 {
+    color: #6222cc;
+    font-family: "Jost", sans-serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  /* Grid Layout for Benefits */
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Individual Card Styling */
+  .benefit-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .benefit-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Icon Styling */
+  .benefit-card i {
+    font-size: 2em;
+    color: #6222cc;
+    margin-bottom: 10px;
+  }
+  
+  /* Title and Description Styling */
+  .benefit-card h3 {
+    color: #333333;
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  .benefit-card p {
+    color: #666666;
+    font-size: 0.9em;
+  }
+
+  /* Section Styling */
+.network-section {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .network-section h2 {
+    color: #6222CC;
+    font-family: "Jost", sans-serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  .network-section p{
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Marquee Effect */
+  .marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .logo-container {
+    display: inline-flex;
+    animation: marquee 15s linear infinite;
+  }
+  
+  /* Circular Logo Styling */
+.network-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #e0e0e0;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+  
+  /* Fit images with flexible constraints */
+  .network-logo-lg{
+    width: 100px;
+    height: 100px;
+  }
+  .network-logo-lg img{
+    max-width: 100px;
+    max-height: 100px;        
+    padding: 10%;
+  }
+
+  .network-logo img {
+    max-width: 80px;             
+    max-height: 80px;           
+    object-fit: contain;        
+    padding: 15px;
+  }
+  
+  /* Marquee Animation */
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Style for the logos */
+  .logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 1.8rem;
+    }
+  }
+  
